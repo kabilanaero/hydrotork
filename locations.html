@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Locations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .about-banner-container {
+            width: 100%;
+            margin: auto;
+        }
+
+        .about-banner-row img{
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        .location-container {
+            width: 85%;
+            margin: auto;
+        }
+
+        .location-row {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .location-col {
+            width: 25%;
+            margin-top: 40px;
+        }
+
+        .location-title {
+            font-size: 40px;
+            position: relative;
+        }
+
+        .location-title::before {
+            content: "";
+            width: 50px;
+            height: 5px;
+            background-color: yellow;
+            top: 50px;
+            left: 0px;
+            position: absolute;
+        }
+
+        .location-para {
+            font-size: 20px;
+            padding-top: 40px;
+        }
+
+        .location-img-p {
+            font-size: 25px;
+            font-weight: 800;
+            padding-top: 10px;
+        }
+
+        @media (min-width:320px) {
+            .about-banner-container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .location-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .location-img {
+                width: 90%;
+                margin: auto;
+            }
+
+            .location-title {
+                font-size: 30px;
+            }
+
+            .location-title::before {
+                content: "";
+                width: 50px;
+                height: 5px;
+                background-color: yellow;
+                top: 40px;
+                left: 0px;
+                position: absolute;
+            }
+
+            .location-col {
+                width: 100%;
+            }
+        }
+
+        @media (min-width:760px) {
+            .about-banner-container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .location-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .location-img {
+                width: 90%;
+                margin: auto;
+            }
+
+            .location-title {
+                font-size: 30px;
+            }
+
+            .location-title::before {
+                content: "";
+                width: 50px;
+                height: 5px;
+                background-color: yellow;
+                top: 40px;
+                left: 0px;
+                position: absolute;
+            }
+
+            .location-col {
+                width: 40%;
+            }
+        }
+
+        @media (min-width:1020px) {
+            .about-banner-container {
+                width: 100%;
+                margin: auto;
+            }
+
+            .location-row {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+
+            .location-img {
+                width: 90%;
+                margin: auto;
+            }
+
+            /* .location-title {
+                font-size: 40px;
+            } */
+
+            .location-title::before {
+                content: "";
+                width: 50px;
+                height: 5px;
+                background-color: yellow;
+                top: 50px;
+                left: 0px;
+                position: absolute;
+            }
+
+            .location-col {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="index.html"><img src="images/main-logo-removebg-preview.png"></a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="about.html" class="desktop-item">Company</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Company</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="images/compasny-he (1).jpeg"  alt="">
+                            </div>
+                            <div class="row">
+                                <header>Who we are</header>
+                                <ul class="mega-links">
+                                    <li><a href="strategy.html">Strategy & Purpose</a></li>
+                                    <li><a href="#">Officers</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header></header>
+                                <ul class="mega-links">
+                                    <li><a href="products.html">Brands</a></li>
+                                    <li><a href="history.html">History</a></li>
+                                    <li><a href="locations.html">Global Locations</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Building Better</header>
+                                <ul class="mega-links">
+                                    <li><a href="about.html">Industries</a></li>
+                                    <li><a href="about.htm;">Innovation</a></li>
+                                    <li><a href="about.html">Foundation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="products.html" class="desktop-item">Products</a>
+                    <input type="checkbox" id="productMega">
+                    <label for="productMega" class="mobile-item">Products</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="images/product-head.jpeg" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="produ1.html">Hydraulic Pumps</a></li>
+                                    <li><a href="produ2.html">Valves</a></li>
+                                    <li><a href="produ3.html">Power Packs</a></li>
+                                    <li><a href="produ4.html">Fittings</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                            
+                                <ul class="mega-links">
+                                    <li><a href="produ5.html">Intersial valves</a></li>
+                                    <li><a href="produ6.html">Control Works</a></li>
+                                    <li><a href="produ7.html">Activation</a></li>
+                                    <li><a href="produ8.html">Directional control</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="produ9.html">Throttle valve</a></li>
+                                    <li><a href="produ10.html">PVR1T Variable</a></li>
+                                    <li><a href="produ11.html">HPV43 Double</a></li>
+                                    <li><a href="produ12.html">Cartridge Valve</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="industries.html" class="desktop-item">Industries</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Industries</label>
+                    <ul class="drop-menu">
+                        <li><a href="industries.html">Power</a></li>
+                        <li><a href="industries.html">Steel</a></li>
+                        <li><a href="industries.html">Plastic</a></li>
+                        <li><a href="industries.html">Construction</a></li>
+                        <li><a href="industries.html">Mechine Tools</a></li>
+                        <li><a href="industries.html">Marine</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- -------------banner section------------- -->
+    <section class="about-banner">
+        <div class="about-banner-container">
+            <div class="about-banner-row">
+                <img src="images/global-banner.jpg" alt="" height="550px">
+            </div>
+        </div>
+    </section>
+    <section class="location">
+        <div class="location-container">
+            <h1 class="location-title">Global Locations</h1>
+            <p class="location-para">Russia is the largest country in the world, while Tamil Nadu, Odisha, and Karnataka
+                are
+                states in India, each known for their rich cultural heritage, diverse landscapes, and significant
+                contributions to art, history, and technology.</p>
+            <div class="location-row">
+                <div class="location-col">
+                    <div class="location-img">
+                        <img src="images/tamilnadu1.jpg" alt="" width="200px">
+                    </div>
+                    <p class="location-img-p">TamilNadu</p>
+                </div>
+                <div class="location-col">
+                    <div class="location-img">
+                        <img src="images/russia1.jpg" alt="" width="200px">
+                    </div>
+                    <p class="location-img-p">Russia</p>
+                </div>
+                <div class="location-col">
+                    <div class="location-img">
+                        <img src="images/odisha.jpg" alt="" width="200px">
+                    </div>
+                    <p class="location-img-p">Odisha</p>
+                </div>
+                <div class="location-col">
+                    <div class="location-img">
+                        <img src="images/karnataka1.jpg" alt="" width="200px">
+                    </div>
+                    <p class="location-img-p">Karnataka</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<script>
+    const dropdownTrigger = document.querySelector('.dropdown-trigger');
+const dropdownRow = document.querySelector('.dropdown-row');
+
+
+dropdownTrigger.addEventListener('mouseover', function () {
+    dropdownRow.style.display = 'block';
+});
+
+dropdownRow.addEventListener('mouseover', function () {
+    dropdownRow.style.display = 'block';
+});
+
+dropdownTrigger.addEventListener('mouseout', function () {
+    dropdownRow.style.display = 'none';
+});
+
+dropdownRow.addEventListener('mouseout', function () {
+    dropdownRow.style.display = 'none';
+});
+const dropdownTrigger2 = document.querySelector('.dropdown-trigger2');
+const dropdownRow2 = document.querySelector('.dropdown-row2');
+
+dropdownTrigger2.addEventListener('mouseover', function () {
+    dropdownRow2.style.display = 'block';
+});
+
+dropdownTrigger2.addEventListener('mouseout', function () {
+    dropdownRow2.style.display = 'none';
+});
+
+dropdownRow2.addEventListener('mouseover', function () {
+    dropdownRow2.style.display = 'block';
+});
+
+dropdownRow2.addEventListener('mouseout', function () {
+    dropdownRow2.style.display = 'none';
+});
+const dropdownTrigger3 = document.querySelector('.dropdown-trigger3');
+const dropdownRow3 = document.querySelector('.dropdown-row3');
+
+dropdownTrigger3.addEventListener('mouseover', function () {
+    dropdownRow3.style.display = 'block';
+});
+
+dropdownTrigger3.addEventListener('mouseout', function () {
+    dropdownRow3.style.display = 'none';
+});
+
+dropdownRow3.addEventListener('mouseover', function () {
+    dropdownRow3.style.display = 'block';
+});
+
+dropdownRow3.addEventListener('mouseout', function () {
+    dropdownRow3.style.display = 'none';
+});
+const dropdownTrigger4 = document.querySelector('.dropdown-trigger4');
+const dropdownRow4 = document.querySelector('.dropdown-row4');
+
+dropdownTrigger4.addEventListener('mouseover', function () {
+    dropdownRow4.style.display = 'block';
+});
+
+dropdownTrigger4.addEventListener('mouseout', function () {
+    dropdownRow4.style.display = 'none';
+});
+
+dropdownRow4.addEventListener('mouseover', function () {
+    dropdownRow4.style.display = 'block';
+});
+
+dropdownRow4.addEventListener('mouseout', function () {
+    dropdownRow4.style.display = 'none';
+});
+const dropdownTrigger5 = document.querySelector('.dropdown-trigger5');
+const dropdownRow5 = document.querySelector('.dropdown-row5');
+
+dropdownTrigger5.addEventListener('mouseover', function () {
+    dropdownRow5.style.display = 'block';
+});
+
+dropdownTrigger5.addEventListener('mouseout', function () {
+    dropdownRow5.style.display = 'none';
+});
+
+dropdownRow5.addEventListener('mouseover', function () {
+    dropdownRow5.style.display = 'block';
+});
+
+dropdownRow5.addEventListener('mouseout', function () {
+    dropdownRow5.style.display = 'none';
+});
+</script>
+
+</body>
+
+</html>
